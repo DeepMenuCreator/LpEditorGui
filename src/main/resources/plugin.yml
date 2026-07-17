@@ -1,0 +1,17 @@
+name: LPGuiEditor
+version: '${project.version}'
+main: com.mystplugin.lpgui.LPGuiEditor
+api-version: '1.21'
+author: MystPlugin
+depend: [LuckPerms]
+
+commands:
+  lpgui:
+    description: Открыть GUI-редактор прав LuckPerms
+    permission: lpgui.use
+    permission-message: "§cУ вас нет прав на использование этой команды."
+
+permissions:
+  lpgui.use:
+    description: Доступ к GUI-редактору LuckPerms
+    default: op
